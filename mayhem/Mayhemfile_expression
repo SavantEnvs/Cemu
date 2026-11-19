@@ -1,0 +1,9 @@
+project: savantenvs/Cemu
+target: expression
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/expression/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_expression
+    libfuzzer: true
+    timeout: 10

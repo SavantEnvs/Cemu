@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu type="complex" access="777">
+  <title_version type="unsignedInt" length="4">32</title_version>
+  <title_id type="hexBinary" length="8">00050000101C9500</title_id>
+  <product_code type="string" length="32">WUP-P-ABCD</product_code>
+  <company_code type="string" length="8">0001</company_code>
+  <content_platform type="string" length="32">WUP</content_platform>
+  <region type="hexBinary" length="4">00000004</region>
+  <olv_accesskey type="unsignedInt" length="4">1234</olv_accesskey>
+  <longname_en type="string" length="512">Fuzz
+Title</longname_en>
+  <longname_ja type="string" length="512">JA</longname_ja>
+  <shortname_en type="string" length="256">Fuzz</shortname_en>
+  <publisher_en type="string" length="256">Pub</publisher_en>
+</menu>

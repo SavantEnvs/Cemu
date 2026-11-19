@@ -1,0 +1,9 @@
+project: savantenvs/Cemu
+target: tmdticket
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/tmdticket/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_tmd_ticket
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,9 @@
+project: savantenvs/Cemu
+target: nex
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nex/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_nex
+    libfuzzer: true
+    timeout: 10
