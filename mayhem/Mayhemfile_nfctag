@@ -1,0 +1,9 @@
+project: savantenvs/Cemu
+target: nfctag
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nfctag/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_nfc_tag
+    libfuzzer: true
+    timeout: 10

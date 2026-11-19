@@ -1,0 +1,9 @@
+project: savantenvs/Cemu
+target: filecache
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/filecache/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_filecache
+    libfuzzer: true
+    timeout: 10

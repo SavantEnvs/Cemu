@@ -1,0 +1,15 @@
+[Definition]
+titleIds = 00050000101C9400,00050000101C9500
+name = Resolution
+path = "Game/Graphics/Resolution"
+version = 7
+
+[Preset]
+name = 1920x1080
+$width = 1920
+$height = 1080
+
+[TextureRedefine]
+width = 1280
+height = 720
+overwriteWidth = ($width/$gameWidth) * 1280
